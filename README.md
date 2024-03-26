@@ -1,2 +1,3 @@
 # free-website-templates
-Just a gift from me to you...
+Just a gift.
+New templates every week!
