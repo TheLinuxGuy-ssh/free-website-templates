@@ -1,0 +1,59 @@
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+body {
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: $red;
+  height: 100%;
+  color: $pcolor;
+}
+:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container {
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.body_wrapper {
+  overflow: hidden;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $unna;
+  color: $title;
+}
+.sec_pad {
+  padding: 100px 0px;
+}
+
+.sec_title {
+  margin-bottom: 76px;
+  h2 {
+    font-size: 52px;
+    line-height: 66px;
+    font-family: $unna;
+    color: $title;
+    span {
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+// dark_bg css
+.dark_bg {
+  background: $title;
+  .sec_title h2,
+  .fact_item,
+  .solution_item h3,
+  .team_item h3,
+  .testimonial_slider .testimonial_content .icon,
+  .testimonial_slider .testimonial_content h3,
+  .testimonial_slider .testimonial_content .name {
+    color: #fff;
+  }
+  .theme_btn,
+  p {
+    color: #a8aaad;
+  }
+  .theme_btn {
+    &:before {
+      background: #57565c;
+    }
+    &:hover {
+      color: #fff;
+      &:before {
+        background: #fff;
+      }
+    }
+  }
+  .testimonial_slider {
+    background: #29252f;
+    .slick-dots li button {
+      border-color: #a8aaad;
+      &:before {
+        background: #a8aaad;
+      }
+    }
+  }
+  .black_bg {
+    background: #1c1920;
+  }
+  .theme_btn.btn_white {
+    color: #fff;
+    &:before {
+      background: #fff;
+    }
+  }
+  .portfolio_area_three {
+    padding-top: 170px;
+    .portfolio_item_three {
+      .content h3 {
+        color: #fff;
+      }
+      &:hover {
+        .content h3 {
+          color: #a8aaad;
+        }
+      }
+    }
+  }
+}

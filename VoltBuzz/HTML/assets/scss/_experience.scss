@@ -1,0 +1,258 @@
+
+
+
+/*===========================
+    15.EXPERIENCE css 
+===========================*/
+
+
+
+.experience-area{
+	position: relative;
+	z-index: 10;
+	& .experience-title{
+		margin-right: -35px;
+		padding-bottom: 46px;
+		& span{
+			color: $theme-color-2;
+			font-size: 16px;
+			font-weight: 500;
+			padding-bottom: 9px;
+		}
+		& .title{
+			font-size: 60px;
+			line-height: 70px;
+			font-weight: 500;
+			letter-spacing: -1px;
+			padding-bottom: 18px;
+			@media #{$lg} {
+				font-size: 46px;
+				line-height: 56px;
+			}
+			@media #{$xs} {
+				font-size: 36px;
+				line-height: 46px;
+			}
+			@media #{$sm} {
+				font-size: 46px;
+				line-height: 56px;
+			}
+		}
+	}
+	& .skill-item{
+		&.item-2{
+			& .skill-bar{
+				& .bar-inner{
+					& .bar{
+						background: #fdb261;
+					}
+				}
+			}
+			& .skill-header{
+				& .skill-percentage{
+					& .count-box{
+						background: #fdb261;
+						&::before{
+							background: #fdb261;
+						}
+					}
+				}
+			}
+		}
+		&.item-3{
+			& .skill-bar{
+				& .bar-inner{
+					& .bar{
+						background: $theme-color-2;
+					}
+				}
+			}
+			& .skill-header{
+				& .skill-percentage{
+					& .count-box{
+						background: $theme-color-2;
+						&::before{
+							background: $theme-color-2;
+						}
+					}
+				}
+			}
+		}
+	}
+	& .experience-thumb{
+		position: absolute;
+		right: 150px;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: right;
+		z-index: -1;
+		@media #{$md} {
+			display: none;
+		}
+		@media #{$xs} {
+			display: none;
+		}
+		& img{
+			width: 70%;
+			@media #{$laptop} {
+				width: 65%;
+			}
+			@media #{$lg} {
+				width: 40%;
+			}
+		}
+		@media #{$laptop} {
+			right: 0;
+		}
+	}
+	&.experience-about{
+		@media #{$laptop} {
+			margin-top: 132px;
+		}
+		& .experience-title{
+			& span{
+				color: $heading-color;
+			}
+		}
+	}
+}
+
+
+
+.about-experience-area{
+	padding-top: 168px;
+	& .about-experience-content{
+		& i{
+			height: 80px;
+			width: 80px;
+			text-align: center;
+			line-height: 80px;
+			background: $theme-color-2;
+			color: $white;
+			font-size: 30px;
+			border-radius: 50% 50% 0 50%;
+		}
+		& .title{
+			font-size: 60px;
+			font-weight: 500;
+			color: $heading-color;
+			padding-top: 35px;
+			padding-bottom: 27px;
+			@media #{$xs} {
+				font-size: 40px;
+			}
+		}
+		& p{
+			font-size: 30px;
+			line-height: 40px;
+			color: $heading-color;
+			padding: 0 60px;
+			@media #{$md} {
+				padding: 0 0 30px;
+			}
+			@media #{$xs} {
+				padding: 0 0 30px;
+				font-size: 24px;
+			}
+			& br{
+				@media #{$lg} {
+					display: none;
+				}
+				@media #{$md} {
+					display: none;
+				}
+				@media #{$xs} {
+					display: none;
+				}
+			}
+			@media #{$lg} {
+				padding: 0;
+			}
+		}
+	}
+	& .experience-item{
+		box-shadow: 0px 16px 32px 0px rgba(22, 85, 197, 0.1);
+		padding: 42px 0;
+		@include transition(0.3s);
+		@media #{$md} {
+			margin-top: 30px;
+		}
+		@media #{$xs} {
+			margin-top: 30px;
+		}
+		& i{
+			font-size: 40px;
+			color: #1445ae;
+			@include transition(0.3s);
+		}
+		& p{
+			font-weight: 500;
+			color: $heading-color;
+			padding-top: 8px;
+			@include transition(0.3s);
+			@media #{$lg} {
+				font-size: 14px;
+			}
+		}
+		&:hover{
+			background: $theme-color;
+			& i{
+				color: $white;
+			}
+			& p{
+				color: $white;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+.web-experience-area{
+	& .web-experience-content{
+		& span{
+			font-weight: 500;
+			text-transform: capitalize;
+			color: #f57092;
+		}
+		& .title{
+			font-size: 60px;
+			line-height: 70px;
+			padding-top: 10px;
+			padding-bottom: 14px;
+			@media #{$lg} {
+				font-size: 50px;
+				line-height: 60px;
+			}
+			@media #{$xs} {
+				font-size: 32px;
+				line-height: 42px;
+			}
+			@media #{$sm} {
+				font-size: 54px;
+				line-height: 64px;
+			}
+		}
+		& p{
+			line-height: 28px;
+			padding-top: 11px;
+			padding-bottom: 35px;
+		}
+		& a{
+			border: 0;
+			background: linear-gradient(to right, #f98a7e 0%, #f65e87 50%, #f98a7e 100%);
+			background-size: 200% auto;
+			color: #fff;
+			&:hover{
+				background-position: right center;
+			}
+		}
+	}
+}

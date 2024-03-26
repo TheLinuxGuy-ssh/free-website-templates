@@ -1,0 +1,43 @@
+/*font Variables*/
+$unna: "Unna", serif;
+$red: "Red Hat Display", sans-serif;
+
+/*Color Variables*/
+$title: #211e26;
+$pcolor: #6a6f75;
+
+/*=================== fonts ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&family=Unna:ital,wght@0,400;1,700&display=swap");
+
+// Mixins
+@mixin transition(
+  $property: all,
+  $duration: 300ms,
+  $animate: linear,
+  $delay: 0s
+) {
+  transition: $property $duration $animate $delay;
+}
+
+// Placeholder Mixins
+
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}
+
+.col-md-offset-right-1,
+.col-lg-offset-right-1 {
+  margin-right: 8.33333333%;
+}
+// Font family link

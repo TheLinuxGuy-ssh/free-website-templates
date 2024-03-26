@@ -1,0 +1,74 @@
+/*=========== testimonial_slider css ============*/
+.testimonial_area {
+  .slick-initialized .slick-slide {
+    display: flex;
+  }
+}
+.testimonial_slider {
+  margin-bottom: 0 !important;
+  background: #fbcec9;
+  padding-top: 30px;
+  .testimonial_content {
+    font-family: $unna;
+    color: #592d23;
+    padding-left: 100px;
+    padding-top: 75px;
+    .icon {
+      font-size: 100px;
+      line-height: 100px;
+      font-weight: 700;
+      color: #592d23;
+    }
+    h3 {
+      font-size: 36px;
+      line-height: 53px;
+      margin-bottom: 45px;
+      span {
+        font-weight: 700;
+      }
+    }
+    .name {
+      font-family: $red;
+      font-weight: 500;
+    }
+  }
+  .slick-dots {
+    bottom: 120px;
+    text-align: left;
+    left: 100px;
+    li {
+      width: auto;
+      height: auto;
+      button {
+        padding: 0px;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        text-align: center;
+        border: 1px solid #592d23;
+        transition: all 0.2s linear;
+        &:before {
+          width: 6px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          content: "";
+          height: 6px;
+          opacity: 1;
+          border-radius: 50%;
+          background: #592d23;
+          transition: all 0.3s linear;
+        }
+      }
+      &.slick-active {
+        button {
+          transform: scale(1.4);
+          &:before {
+            transform: translate(-50%, -50%) scale(1.67);
+          }
+        }
+      }
+    }
+  }
+}
+/*=========== testimonial_slider css ============*/

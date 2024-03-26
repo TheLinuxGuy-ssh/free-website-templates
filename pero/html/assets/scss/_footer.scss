@@ -1,0 +1,79 @@
+/*============== footer_top css ==============*/
+.footer_top {
+  padding: 150px 0px 120px;
+}
+.f_widget {
+  .f_logo {
+    margin-bottom: 40px;
+    display: block;
+  }
+  .f_title {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: $unna;
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #7e8288;
+  }
+  ul {
+    li {
+      color: #7e8288;
+      a {
+        color: #7e8288;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 42px;
+        transition: color 0.2s linear;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+  &.social_widget {
+    padding-left: 100px;
+  }
+}
+.footer_bottom {
+  padding: 33px 0px;
+  border-top: 1px solid #2c2833;
+  p {
+    margin-bottom: 0;
+    color: #7e8288;
+  }
+  p,
+  a {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  a {
+    color: #fff;
+    i {
+      vertical-align: middle;
+    }
+  }
+}
+.footer_bottom_two {
+  padding-top: 0;
+  border: 0px;
+  .border_bottom {
+    margin-bottom: 33px;
+    margin-top: 0;
+  }
+}
+.offwhite_bg {
+  .f_title {
+    color: $title;
+  }
+  .f_widget ul li a:hover {
+    color: $title;
+  }
+  .footer_bottom a {
+    color: $title;
+  }
+}
+/*============== footer_top css ==============*/

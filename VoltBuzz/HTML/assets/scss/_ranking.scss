@@ -1,0 +1,121 @@
+
+
+
+/*===========================
+    16.RANGING css 
+===========================*/
+
+.ranking-area{
+	position: relative;
+	z-index: 10;
+	background-attachment: fixed;
+	&::before{
+		position: absolute;
+		content: '';
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: rgb(255, 255, 255);
+		opacity: .9;
+		z-index: -1;
+
+	}
+	& .ranking-item{
+		& span{
+			font-size: 18px;
+			font-weight: 500;
+			color: #0160e7;
+		}
+		& .title{
+			font-size: 60px;
+			line-height: 70px;
+			padding-top: 9px;
+			padding-bottom: 38px;
+			@media #{$lg} {
+				font-size: 54px;
+				line-height: 64px;
+			}
+			@media #{$xs} {
+				font-size: 34px;
+				line-height: 44px;
+			}
+			@media #{$sm} {
+				font-size: 44px;
+				line-height: 54px;
+			}
+		}
+		& ul{
+			& li{
+				display: inline-block;
+				margin: 0 13px;
+				& a{
+					&.main-btn{
+						background-image: -moz-linear-gradient( 0deg, rgb(10,204,148) 0%, rgb(37,209,110) 100%);
+						background-image: -webkit-linear-gradient( 0deg, rgb(10,204,148) 0%, rgb(37,209,110) 100%);
+						background-image: -ms-linear-gradient( 0deg, rgb(10,204,148) 0%, rgb(37,209,110) 100%);
+						color: $white;
+						border: 0;
+						&.main-btn-2{
+							background: $heading-color;
+							@media #{$xs} {
+								margin-top: 30px;
+							}
+							@media #{$sm} {
+								margin-top: 0px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	& .icon-1{
+		position: absolute;
+		left: 100px;
+		top: 65px;
+		height: 120px;
+		width: 120px;
+		text-align: center;
+		line-height: 120px;
+		background: $white;
+		border-radius: 50%;
+		box-shadow: 0px 20px 40px 0px rgba(11, 204, 147, 0.1);
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	& .icon-2{
+		position: absolute;
+		right: 50px;
+		top: -40px;
+		height: 120px;
+		width: 120px;
+		text-align: center;
+		line-height: 120px;
+		background: $white;
+		border-radius: 50%;
+		box-shadow: 0px 20px 40px 0px rgba(11, 204, 147, 0.1);
+		@media #{$xs} {
+			display: none;
+		}
+	}
+	& .icon-3{
+		position: absolute;
+		right: 200px;
+		bottom: -50px;
+		height: 120px;
+		width: 120px;
+		text-align: center;
+		line-height: 120px;
+		background: $white;
+		border-radius: 50%;
+		box-shadow: 0px 20px 40px 0px rgba(11, 204, 147, 0.1);
+		@media #{$xs} {
+			display: none;
+		}
+	}
+}
+
+
+

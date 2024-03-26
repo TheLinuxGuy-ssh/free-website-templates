@@ -1,0 +1,121 @@
+
+
+
+/*===========================
+    22.FUN FACTS css 
+===========================*/
+
+
+
+.fun-facts-area{
+	overflow: hidden;
+	& .fun-facts-brand{
+		padding-top: 100px;
+		padding-bottom: 100px;
+		border-bottom: 4px solid #0160e7;
+		padding: 100px 70px;
+		@media #{$laptop} {
+			padding: 70px 30px;
+		}
+	}
+	& .fun-facts-counter{
+		background: #f9fbff;
+		padding: 60px 80px 82px;
+		@media #{$laptop} {
+			padding: 40px 10px 30px;
+		}
+		@media #{$lg} {
+			padding: 40px 10px 30px;
+		}
+		@media #{$xs} {
+			padding: 20px;
+		}
+		@media #{$sm} {
+			padding: 60 80px 82px;
+		}
+		& .counter-item{
+			padding-left: 45px;
+			position: relative;
+			@media #{$laptop} {
+				padding-left: 35px;
+			}
+			@media #{$lg} {
+				padding-left: 25px;
+			}
+			@media #{$md} {
+				padding-left: 25px;
+			}
+			&::before{
+				position: absolute;
+				content: '';
+				left: 0;
+				top: 14px;
+				width: 0;
+				height: 0;
+				border-top: 26px solid #0160e7;
+				border-right: 26px solid transparent;
+			}
+			& .title{
+				font-size: 20px;
+				color: #0160e7;
+				& span{
+					font-size: 80px;
+					font-weight: 700;
+					line-height: 86px;
+					color: $heading-color;
+					@media #{$laptop} {
+						font-size: 60px;
+					}
+					@media #{$lg} {
+						font-size: 50px;
+					}
+					@media #{$md} {
+						font-size: 50px;
+					}
+				}
+			}
+			& p{
+				font-size: 24px;
+				font-weight: 500;
+				color: $heading-color;
+				@media #{$laptop} {
+					font-size: 18px;
+				}
+				@media #{$md} {
+					font-size: 18px;
+				}
+			}
+			&.item-2{
+				&::before{
+					border-top-color:  #fe4c1c;
+					border-right-color: transparent;
+
+				}
+			}
+			&.item-3{
+				&::before{
+					border-top-color:  #00ffba;
+					border-right-color: transparent;
+
+				}
+			}
+		}
+	}
+	&.brand-4-area{
+		& .fun-facts-brand{
+			border: 0;
+			padding: 138px 30px 128px;
+			& .brand-item{
+				text-align: center;
+				& img{
+					display: inline-block;
+					opacity: .2;
+					@include transition(0.3s);
+					&:hover{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}

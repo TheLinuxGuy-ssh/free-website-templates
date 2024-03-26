@@ -1,0 +1,322 @@
+
+
+
+/*===========================
+    5.QUERY css 
+===========================*/
+
+
+
+
+
+
+.query-area{
+	& .query-item{
+		padding: 120px;
+		background: $theme-color;
+		position: relative;
+		z-index: 10;
+		@media #{$lg} {
+			padding: 70px;
+		}
+		@media #{$md} {
+			padding: 65px;
+		}
+		@media #{$xs} {
+			padding: 20px;
+		}
+		@media #{$sm} {
+			padding: 70px;
+		}
+		& .dot-1{
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			z-index: -1;
+			@media #{$xs} {
+				display: none;
+			}
+			@media #{$sm} {
+				display: none;
+			}
+		}
+		& .dot-2{
+			position: absolute;
+			right: 60px;
+			bottom: 60px;
+			z-index: -1;
+			@media #{$xs} {
+				display: none;
+			}
+			@media #{$sm} {
+				display: block;
+			}
+		}
+		& .query-content{
+			& span{
+				color: $white;
+				font-weight: 500;
+			}
+			& .title{
+				font-size: 60px;
+				color: $white;
+				position: relative;
+				padding-bottom: 32px;
+				@media #{$lg} {
+					font-size: 44px;
+				}
+				@media #{$xs} {
+					font-size: 32px;
+				}
+				@media #{$sm} {
+					font-size: 48px;
+				}
+				&::before{
+					position: absolute;
+					content: '';
+					left: 0;
+					bottom: 0px;
+					height: 2px;
+					width: 14px;
+					background: $white;
+				}
+				&::after{
+					position: absolute;
+					content: '';
+					left: 20px;
+					bottom: 0px;
+					height: 2px;
+					width: 30px;
+					background: $white;
+				}
+			}
+		}
+		& .query-btn{
+			@media #{$md} {
+				margin-top: 30px;
+			}
+			@media #{$xs} {
+				margin-top: 30px;
+			}
+			& ul{
+				& li{
+					& a{
+						&.main-btn{
+							background: $white;
+							border-color: $white;
+							color: $heading-color;
+							&:hover{
+								background-color: transparent;
+								color: $white;
+							}
+							& i{
+								padding-right: 6px;
+							}
+							&.main-btn-2{
+								background: #00b0ff;
+								border-color: #00b0ff;
+								color: $white;
+								margin-left: 20px;
+								@media #{$xs} {
+									margin-left: 0;
+									margin-top: 20px;
+								}
+								@media #{$sm} {
+									margin-left: 20px;
+									margin-top: 0px;
+								}
+								&:hover{
+									background-color: transparent;
+									color: #00b0ff;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.query-2-area{
+		background: #fafbff;
+		padding-top: 140px;
+		padding-bottom: 140px;
+		& .query-item{
+			background: $white;
+			box-shadow: 0px 30px 60px 0px rgba(11, 204, 147, 0.06);
+			& .query-content{
+				& span{
+					color: $theme-color-2;
+				}
+				& .title{
+					color: $heading-color;
+					&::before{
+						background: $theme-color-2;
+					}
+					&::after{
+						background: $theme-color-2;
+					}
+				}
+			}
+			& .query-btn{
+				& a{
+					&.main-btn{
+						border: 2px solid #ededed;
+						color: $heading-color;
+						&:hover{
+							border-color: $theme-color-2;
+							background: $theme-color-2;
+						}
+						&.main-btn-2{
+							border-color: #00b0ff;
+						}
+					}
+				}
+			}
+		}
+	}
+	&.subscribe-area{
+		& .query-item{
+			background-image: -moz-linear-gradient( 0deg, rgb(10,204,148) 0%, rgb(37,209,110) 100%);
+			background-image: -webkit-linear-gradient( 0deg, rgb(10,204,148) 0%, rgb(37,209,110) 100%);
+			background-image: -ms-linear-gradient( 0deg, rgb(10,204,148) 0%, rgb(37,209,110) 100%);
+			box-shadow: 0px 30px 60px 0px rgba(11, 204, 147, 0.06);
+			border-radius: 20px;
+			padding: 120px 100px;
+			@media #{$xs} {
+				padding: 30px;
+			}
+			& .query-content{
+				& .title{
+					letter-spacing: -2px;
+				}
+			}
+			& .query-btn{
+				& .input-box{
+					position: relative;
+					display: inline-block;
+					@media #{$md} {
+						display: block;
+					}
+					@media #{$xs} {
+						display: block;
+					}
+					& i{
+						position: absolute;
+						left: 40px;
+						top: 50%;
+						transform: translateY(-50%);
+						color: $heading-color;
+						@media #{$xs} {
+							display: none;
+						}
+
+					}
+					& input{
+						width: 510px;
+						background: rgba(255, 255, 255,.95);
+						border-radius: 60px;
+						height: 80px;
+						border: 0;
+						padding-left: 62px;
+						color: $heading-color;
+						@media #{$lg} {
+							width: 430px;
+						}
+						@media #{$md} {
+							width: 100%;
+						}
+						@media #{$xs} {
+							width: 100%;
+							padding-left: 20px;
+						}
+						&::placeholder{
+							opacity: 1;
+							color: $heading-color;
+						}
+					}
+					& button{
+						position: absolute;
+						right: 10px;
+						top: 50%;
+						transform: translateY(-50%);
+						background: $white;
+						color: $theme-color-2;
+						box-shadow: 0px 30px 60px 0px rgba(11, 204, 147, 0.3);
+						border-color: $white;
+						@media #{$xs} {
+							position: static;
+							margin-top: 45px;
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+	&.query-about{
+		padding-bottom: 134px;
+	}
+	&.query-3-area{
+		& .query-item{
+			border-radius: 20px;
+			background-color: rgb(1, 96, 231);
+			box-shadow: 0px 16px 32px 0px rgba(1, 96, 231, 0.2);
+			& .query-btn{
+				& .main-btn{
+					&.main-btn-2{
+						background: #003e96;
+						border-color: #003e96;
+						&:hover{
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+		&.query-4-area{
+			& .query-item{
+				border-radius: 0;
+				background-image: -moz-linear-gradient( 0deg, rgb(249,138,126) 0%, rgb(246,94,135) 100%);
+				background-image: -webkit-linear-gradient( 0deg, rgb(249,138,126) 0%, rgb(246,94,135) 100%);
+				background-image: -ms-linear-gradient( 0deg, rgb(249,138,126) 0%, rgb(246,94,135) 100%);
+				box-shadow: 0px 8px 16px 0px rgba(251, 143, 143, 0.4);
+				& .query-btn{
+					& ul{
+						& li{
+							& a{
+								&.main-btn-2{
+									background-color: transparent;
+									border: 2px solid #f994ab;
+									color: $white;
+									&:hover{
+										background: $white;
+										border-color: $white;
+										color: rgb(246,94,135);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

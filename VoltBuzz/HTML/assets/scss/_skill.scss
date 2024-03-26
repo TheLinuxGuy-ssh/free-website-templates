@@ -1,0 +1,173 @@
+
+
+
+
+/*===========================
+    7.SKILL css 
+===========================*/
+
+
+
+
+
+
+.skill-area{
+    & .skill-brand{
+        position: relative;
+        z-index: 10;
+        @media #{$lg} {
+            margin: 0 0;
+        }
+        @media #{$xs} {
+            margin: 30px 0;
+        }
+        & .icon{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            height: 60px;
+            width: 60px;
+            text-align: center;
+            line-height: 60px;
+            color: $white;
+            border-radius: 50%;
+            background-image: -moz-linear-gradient( 0deg, rgb(19,65,169) 0%, rgb(21,96,230) 100%);
+            background-image: -webkit-linear-gradient( 0deg, rgb(19,65,169) 0%, rgb(21,96,230) 100%);
+            background-image: -ms-linear-gradient( 0deg, rgb(19,65,169) 0%, rgb(21,96,230) 100%);
+            box-shadow: 0px 8px 16px 0px rgba(22, 85, 197, 0.2);
+            font-size: 24px;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(../images/icon/skill-line.png);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+        }
+        & .brand-list{
+            & .brand-item{
+                & a{
+                    @media #{$xs} {
+                        margin-left: 10px;
+                        margin-right: 10px;
+                    }
+                    @media #{$sm} {
+                        margin-left: 0px;
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+.skills {
+    position: relative;
+    @media #{$md} {
+        margin-bottom: 40px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media #{$xs} {
+        margin-bottom: 40px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.skills .skill-item {
+    position: relative;
+    margin-bottom: 46px;
+}
+
+.skills .skill-item .skill-header {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.skills .skill-item .skill-header .skill-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: $heading-color;
+    opacity: .8;
+    padding-bottom: 22px;
+}
+
+.skills .skill-item .skill-header .skill-percentage {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ff5e14;
+}
+.skills .skill-item .skill-header .skill-percentage .count-box{
+    font-size: 14px;
+    font-weight: 400;
+    color: $white;
+    background: $theme-color;
+    line-height: 30px;
+    width: 52px;
+    text-align: center;
+    position: relative;
+    font-weight: 500;
+    &::before{
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 0;
+        width: 3px;
+        height: 57px;
+        background: $theme-color;
+    }
+}
+.skills .skill-item .skill-header .skill-percentage .count-box span{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.skills .skill-item:last-child {
+    margin-bottom: 0;
+}
+
+.skills .skill-item .skill-bar {
+    position: relative;
+    width: 100%;
+}
+
+.skills .skill-item .skill-bar .bar-inner {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #ebf2ff;
+    border-bottom: 2px solid #ebf2ff;
+    border-radius: 0px;
+}
+
+.skills .skill-item .skill-bar .bar-inner .bar {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 0;
+    height: 10px;
+    background: $theme-color;
+    -webkit-transition: all 2000ms ease;
+    transition: all 2000ms ease;
+    border-radius: 0px;
+    margin-top: -3px;
+}
+
+
