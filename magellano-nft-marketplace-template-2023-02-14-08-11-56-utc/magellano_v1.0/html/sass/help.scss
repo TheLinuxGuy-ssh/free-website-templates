@@ -1,0 +1,116 @@
+@import 'variables';
+@import 'mixin'; 
+
+a.box_topic {
+    background-color: var(--background-color-2);
+    padding: 45px 45px 15px 45px;
+
+    display: block;
+    @include transition-default;
+    @include box-shadow (0px 0px 15px 0px rgba(0, 0, 0, 0.05));
+    color: var(--body-text-color);
+    margin-bottom: 25px;
+    overflow: hidden;
+    border-radius: var(--border-radius-medium);
+
+    &:hover {
+        @include transform (translateY(-10px));
+    }
+
+    span {
+        border-radius: var(--border-radius-medium);
+        display: block;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        background-color: var(--background-color-1);
+        line-height: 60px;
+        margin-bottom: 15px;
+    }
+
+    i {
+        @include fontSize(32px);
+        color: $color-3;
+        display: block;
+    }
+
+    h3 {
+        @include fontSize(21px);
+    }
+}
+
+.list_articles {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding:0;
+		li {
+			float: left;
+			width: 45%;
+			margin-right: 45px;
+			padding: 15px 0;
+			border-bottom: 1px solid var(--border-color-1);
+			a {
+				color: var(--body-text-color);
+				display: block;
+				&:hover {
+					color: var(--color-3);
+					@include transform (translateX(5px));
+				}
+			}
+
+			i {
+				margin-right: 10px;
+				@include fontSize(16px);
+				position: relative;
+				top: 2px;
+			}
+			@include tablet {
+				float: none;
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+	}
+}
+.search_bar {
+    position: relative;
+    padding: 5px;
+
+    input[type='text'] {
+        border: 0;
+        height: 50px;
+        font-weight: 500;
+        padding-left: 15px;
+        color: #555;
+        @include rgba(bg, #fff, 1);
+        &:focus {
+            border: 0;
+            box-shadow: none;
+            color: #555;
+        }
+    }
+
+    input[type='submit'] {
+        position: absolute;
+        right: 10px;
+        color: #fff;
+        font-weight: 600;
+        top: 10px;
+        border: 0;
+        padding: 0 25px;
+        height: 40px;
+        cursor: pointer;
+        background-color: var(--color-1);
+        @include transition-default;
+        border-radius: var(--border-radius-small);
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+             color: #2a2a2a;
+             background-color: var(--color-3);
+        }
+    }
+}

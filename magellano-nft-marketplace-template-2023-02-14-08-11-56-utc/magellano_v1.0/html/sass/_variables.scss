@@ -1,0 +1,61 @@
+//-------------------- Base Colors --------------------//
+$body-color: 					#18141a;
+$body-text-color:               #ccc;
+$heading-color:                 #fafafa;
+$heading-weight:                500;
+
+$color-1: 						#ff0071;
+$color-2: 						#ff001d;
+$color-3: 						#48e0a4;
+$color-4: 						#fafafa;
+$color-5: 						#FFC107;
+
+$border-color-1: 			    #36313d;
+$border-color-2: 			    #d2d8dd;
+
+$gradient-color-start: 			#ff0071;
+$gradient-color-end: 			#ff001d;
+
+$background-color-1: 			#18141a;
+$background-color-2: 			#201d24;
+
+//-------------------- Base Colors Light Theme --------------------//
+$body-color-light: 				#f8f8f8;
+$body-text-color-light:         #666;
+$heading-color-light:           #222;
+
+$color-1-light: 				#ff0071;
+$color-2-light: 				#ff001d;
+$color-3-light: 				#3dbf8c;
+$color-4-light: 				#555;
+$color-5-light: 				#FFC107;
+
+$border-color-1-light: 			#ededed;
+$border-color-2-light: 			#ddd;
+
+$background-color-1-light: 		#f8f8f8;
+$background-color-2-light: 		#fff;
+
+//-------------------- Font Families --------------------//
+$font-main: 					'Poppins', sans-serif;
+
+//-------------------- Font Sizes --------------------//
+$font-size-base:                0.875rem;
+
+//-------------------- Line Height Variables --------------------//
+$line-height-base:              1.5;
+$line-height-large:           	1.8;
+$line-height-none:           	1;
+
+//-------------------- Border radius --------------------//
+$border-radius-none: 			0;
+$border-radius-small: 			3px;
+$border-radius-medium: 			5px;
+$border-radius-large: 			10px;
+$border-radius-circle: 			50%;
+
+//-------------------- Responsive sizes -------------------- //
+$large-device-width: 1199px; // Large devices (desktops, less than 1200px)
+$medium-device-width: 991px; // Medium devices (tablets, less than 992px)
+$small-device-width: 767px;	// Small devices (landscape phones, less than 768px)
+$extra-small-device-width: 575px;	// Extra small devices (portrait phones, less than 576px)

@@ -1,0 +1,243 @@
+
+@media (max-width: 1200px) {
+	.list-services > .col-md-4:nth-child(3n+1) {
+	    clear: both;
+	}
+}
+@media (max-width: 1024px) {
+	.slides-navigation a.prev{
+		left: -20px;
+	}
+	.slides-navigation a.next{
+		right: -20px;
+	}
+	.testimony .owl-nav .owl-prev {
+	    left: -20px;
+	}
+	.testimony .owl-nav .owl-next {
+	    right: -20px;
+	}
+	.header-1 .navbar-nav:after{
+		display: none;
+		content: none;
+	}
+	#caro-project .owl-nav .owl-prev,
+	#owl-testimony .owl-nav .owl-prev{
+		left: -20px;
+	}
+	#caro-project .owl-nav .owl-next,
+	#owl-testimony .owl-nav .owl-next{
+		right: -20px;
+	}
+	.nav > li > a {
+	    padding: 10px 10px;
+	}
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+	.navbar-toggle{
+		clear: left;
+	    float: right;
+	}
+	.topbar{
+		height: auto;
+	}
+	.topbar-left{
+		text-align: center;
+	}
+	.topbar-right{
+		text-align: center !important;
+	}
+	
+	.topbar-menu,.topbar-sosmed{
+		margin-left: 0;
+	    margin-bottom: 0;
+	}
+	
+
+	.nav > li > a {
+	    padding: 10px 6px;
+	}
+
+	/*.navbar-main .dropdown-menu > li a{
+		color: #333333;
+	}*/
+
+
+	.box-icon-1{
+	
+		.icon{
+		    clear: left;
+		    display: block;
+		    width: 100%;
+		    text-align: center;
+		}
+		.body-content{
+	        text-align: center;
+		    margin-left: 0;
+		}
+	}
+
+	.container-nav .btn-orange-cta{
+	    position: absolute;
+	    right: 10px;
+	    top: 0;
+	}
+
+	.wrap-caption{
+		width: 100%;
+		&.center, &.right{
+			width: 100%;
+		}
+	}
+
+
+	.box-team{
+		.box-image, .body-content{
+			width: 100%;
+		}
+	}
+
+	.btn-sidebar{
+		&.btn, &.btn-primary, &.btn-secondary{
+		    padding: 15px 25px;
+		}
+	}
+	
+	.about-img{
+        min-height: initial;
+	    .about-img-top{
+    	    position: relative;
+		    width: 100%;
+		    bottom: 0;
+		    transform: translateY(0);
+		    border: 0;
+	    }
+	    .about-img-bottom{
+    	    position: relative;
+		 	width: 100%;
+	    }
+	}
+
+}
+
+@media (max-width: 767px) {
+	.topbar{
+		display: none;
+	}
+	.header-1 .navbar-nav:after{
+		content: none;
+	}
+	.navbar-main{ 
+        background-color: $white;
+		position: fixed;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+		.navbar-brand{
+			top: 22px;
+		    position: absolute;
+			/*top: 22px;
+			position: fixed;*/
+			> img{
+				width: 60%
+			}
+			img{
+		        display: none;
+		        &:last-child{
+		          display: block;
+		        }
+	      	}
+		}
+		.dropdown-menu > li a{
+			color: $black_3;
+		}
+	}
+	.nav > li > a {
+	    padding: 10px 25px;
+	}
+
+	
+}
+
+@media (max-width: 479px) {
+
+	.contact-info{
+		clear: right;
+	    width: 100%;
+	    display: none;
+		> div{
+			display: block;
+			margin-right: 0px;
+		}
+	}
+	/*.topbar-logo{
+		.btn-cta{
+		    clear: right;
+			position: relative;
+		 	transform: translateY(78px);
+			z-index: 4;
+		}
+	}*/
+
+	.bos-quote{
+		.bos-photo{
+			clear: left;
+		    display: block;
+		    width: auto;
+		    margin-bottom: 20px;
+		}
+		.bos-text{
+			clear: left;
+		    display: block;
+		    margin-left: 0;
+		}
+	}
+
+	// hapus
+	h2, .banner-page .title-page {
+	    font-size: 2em;
+	}
+	.box-partner .item .box-image {
+	    clear: left;
+	    width: auto;
+
+	}
+	.box-partner .item .box-info {
+	    clear: left;
+        width: auto;
+        margin-left: 0;
+	}
+	
+
+	.career-tabs .nav-tabs > li {
+	   width: 100%;
+	   clear: left;
+	}
+	
+	
+	.testimonial-1{
+		.media{
+		    clear: both;
+    		display: block;
+		    max-width: 300px;
+    		margin-bottom: 40px;
+    		margin-right: 0;
+		}
+		.body{
+			clear: both;
+    		display: block;
+		}
+	}
+	.cta {
+		.cta-info{
+		    width: 100%;
+		}
+	}
+}

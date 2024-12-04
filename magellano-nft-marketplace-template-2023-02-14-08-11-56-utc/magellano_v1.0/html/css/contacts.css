@@ -1,0 +1,33 @@
+.box_contacts {
+  background-color: var(--background-color-2);
+  padding: 30px 15px;
+  border-radius: var(--border-radius-medium);
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.05);
+}
+.box_contacts h2 {
+  margin: 0 0 10px 0;
+  font-size: 21px;
+  font-size: 1.3125rem;
+}
+.box_contacts i {
+  font-size: 46px;
+  font-size: 2.875rem;
+  color: #ff0071;
+}
+.box_contacts a {
+  color: var(--body-text-color);
+}
+.box_contacts a:hover {
+  color: var(--color-3);
+  text-decoration: underline;
+}
+.box_contacts small {
+  display: block;
+  color: #999;
+}
+
+#contactform textarea {
+  height: 150px;
+}
